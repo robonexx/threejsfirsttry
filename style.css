@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.418);
+  --spacing: 350px;
+
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+  
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+
+h1, h2, h3, blockquote {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 4;
+    font-size: 2.5rem;
+    padding: 2rem;
+    border-top-right-radius: 200px;
+    border-bottom-left-radius: 50px;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 2rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 2rem;
+    grid-column: 2 / span 5;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: #121212;
+    text-shadow: 1px 2px 5px rgb(207, 207, 207);
+    background: linear-gradient(120deg, rgb(253, 253, 253), transparent);
+    font-size: 3rem;
+    display: inline-block;
+    line-height: 0.6;
+    border-radius: 10px;
+  }
+  
+  blockquote:last-child p {
+    color: #ffffffc0;
+    text-shadow: 3px 5px 10px rgb(8, 6, 26);
+    background: linear-gradient(120deg, rgba(218, 212, 212, 0.767), transparent);
+    font-size: 3rem;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .left {
+    grid-column: 6 / 12;
+  }
